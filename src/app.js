@@ -1,7 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-const portNumber = 5000;
+const portNumber = process.env.PORT;
 
 app.use(morgan('dev'));
 
